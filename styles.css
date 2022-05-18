@@ -760,13 +760,23 @@ background: radial-gradient(circle, rgba(252,70,107,1) 0%, rgba(0,0,0,1) 86%);
 
   .es-cross__mobile {
     display: block;
-    border:1px solid green;
+    
+  }
+  #es-loreal.es-loreal .es-cross__product{
+    min-height: auto;
+    padding: 32px 0;
   }
   .es-cross__product,
   .es-cross__product--1,
-  .es-cross__product--2{
+  .es-cross__product--2,
+  .es-cross__product--3,
+  .es-cross__product--4,
+  .es-cross__product--5{
     max-height: none;
     min-height: none;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
   }
  .es-cross__container{
     display: grid !important;
@@ -780,6 +790,7 @@ background: radial-gradient(circle, rgba(252,70,107,1) 0%, rgba(0,0,0,1) 86%);
     width: auto;
     max-height: 300px;
     padding: 16px;
+    border:1px solid red;
   }
   .es-cross__content--1{
     position: static;
