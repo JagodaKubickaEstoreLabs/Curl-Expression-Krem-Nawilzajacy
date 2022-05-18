@@ -760,21 +760,39 @@ background: radial-gradient(circle, rgba(252,70,107,1) 0%, rgba(0,0,0,1) 86%);
 
   .es-cross__mobile {
     display: block;
+    border:1px solid green;
+  }
+  .es-cross__product,
+  .es-cross__product--1,
+  .es-cross__product--2{
+    max-height: none;
+    min-height: none;
   }
  .es-cross__container{
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    display: grid !important;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+   
   }
-  
+  .es-cross__content{
+    margin: 0 auto;
+  }
+  .es-cross__content img{
+    width: auto;
+    max-height: 300px;
+    padding: 16px;
+  }
   .es-cross__content--1{
     position: static;
     top:0;
-    border:1px solid red;
+   
   }
   .es-cross__content--2{
     position: static;
     top:0;
+    left:0%;
     border:1px solid red;
+    
+   
     
   }
   .es-cross__content--3{
@@ -925,10 +943,7 @@ background: radial-gradient(circle, rgba(252,70,107,1) 0%, rgba(0,0,0,1) 86%);
         -ms-flex-align: center;
             align-items: center;
   }
-  #es-loreal.es-loreal .es-features__image {
-    margin-bottom: 0;
-    min-width: 300px;
-  }
+  
   #es-loreal.es-loreal .es-cross__container {
     display: -webkit-box;
     display: -ms-flexbox;
@@ -946,13 +961,6 @@ background: radial-gradient(circle, rgba(252,70,107,1) 0%, rgba(0,0,0,1) 86%);
   
 }
 
-@media screen and (min-width: 620px) {
-  #es-loreal.es-loreal .es-cross__content--2 {
-    max-width: 200px;
-    
-  }
-  
-}
 
 @-webkit-keyframes slideleft {
   from {
