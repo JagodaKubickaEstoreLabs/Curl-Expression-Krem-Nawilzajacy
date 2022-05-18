@@ -545,6 +545,8 @@ background: radial-gradient(circle, rgba(252,70,107,1) 0%, rgba(0,0,0,1) 86%);
   padding: 0 24px;
   margin: 0;
   color: #fff;
+  width: auto;
+  list-style: disc;
   
 }
 
@@ -860,6 +862,11 @@ background: radial-gradient(circle, rgba(252,70,107,1) 0%, rgba(0,0,0,1) 86%);
   background-position: center;
   background-size: cover;
   min-height: 300px;
+}
+@media screen and (max-width: 560px){
+  .es-use-img{
+    display: none;
+  }
 }
 /* end of how to use */
 
