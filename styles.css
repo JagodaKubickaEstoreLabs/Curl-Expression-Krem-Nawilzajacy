@@ -567,6 +567,27 @@ background: radial-gradient(circle, rgba(252,70,107,1) 0%, rgba(0,0,0,1) 86%);
     margin: 0 auto;
   }
 }
+/* video */
+#es-loreal.es-loreal .es-video {
+  position: relative;
+  max-width: 400px;
+  margin: 0 auto;
+}
+
+#es-loreal.es-loreal .es-video__container {
+  position: relative;
+  padding-bottom: 100%;
+  height: 0;
+}
+
+#es-loreal.es-loreal .es-video__iframe {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: 1;
+}
 /* cross sell */
 #es-loreal.es-loreal .es-cross {
   background: #fff;
