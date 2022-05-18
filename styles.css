@@ -572,6 +572,7 @@ background: radial-gradient(circle, rgba(252,70,107,1) 0%, rgba(0,0,0,1) 86%);
   position: relative;
   max-width: 400px;
   margin: 0 auto;
+  padding: 32px 0;
 }
 
 #es-loreal.es-loreal .es-video__container {
