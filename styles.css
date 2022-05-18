@@ -39,7 +39,6 @@ body {
   padding: 0;
   max-width: 670px;
   margin: 0 auto ;
-  border:1px solid red;
 }
 
 * {
@@ -49,6 +48,7 @@ body {
 
 #es-loreal.es-loreal {
   font-family: "Gotham", Tahoma, Geneva, Verdana, sans-serif;
+  max-width: 670px;
   font-weight: 400;
   font-size: 16px;
   line-height: 1.2;
@@ -176,6 +176,7 @@ body {
 #es-loreal.es-loreal .es-about {
   padding: 16px;
   margin-bottom: 56px;
+  margin-top: 56px;
   text-align: center;
 }
 
@@ -258,12 +259,15 @@ body {
   
 }
 .es-ingr__first-title{
-  padding: 16px;
   font-family: "ITCAvantGardeStd", Tahoma, Geneva, Verdana, sans-serif;
   font-weight: 500;
   font-size: 27px;
   
-  
+}
+.es-ingr__container--text{
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
 }
 .es-ingr__text{
   color: #fff;
@@ -279,8 +283,6 @@ body {
   font-size: 27px;
   position: relative;
   width: max-content;
-  padding-right: 16px;
-  
 }
 .es-ingr__g{
   margin-left: 100px;
@@ -290,8 +292,8 @@ body {
   position: absolute;
   background-color: #fff;
   height: 1px;
-  width: 200px;
-  left:-210px;
+  width: 270px;
+  left:-270px;
   top: 20px;
 }
 
@@ -300,8 +302,8 @@ body {
   position: absolute;
   background-color: #fff;
   height: 1px;
-  width: 50px;
-  left:-50px;
+  width: 40px;
+  left:-40px;
   top: 20px;
 }
 .es-ingr__n::before{
@@ -309,8 +311,8 @@ body {
   position: absolute;
   background-color: #fff;
   height: 1px;
-  width: 90px;
-  left:-90px;
+  width: 190px;
+  left:-190px;
   top: 20px;
 }
 .es-ingr__desc{
@@ -324,6 +326,9 @@ body {
     background-color: #000;
     background: rgb(252,70,107);
 background: radial-gradient(circle, rgba(252,70,107,1) 0%, rgba(0,0,0,1) 86%);
+  }
+  .es-ingr__container--text{
+    align-items: center;
   }
   .es-ingr__text{
     width: 100%;
@@ -355,11 +360,9 @@ background: radial-gradient(circle, rgba(252,70,107,1) 0%, rgba(0,0,0,1) 86%);
   display: flex;
   flex-direction: column;
   justify-content: center;
-  padding: 0 16px;
+  padding: 0 36px;
   margin: 0;
   margin-left: 20px;
-  
- 
 }
 .es-main-title{
   font-size: 42px;
@@ -628,15 +631,11 @@ background: radial-gradient(circle, rgba(252,70,107,1) 0%, rgba(0,0,0,1) 86%);
   height: 80px;
   background-color: #000;
   position: absolute;
-  bottom: 150px;
-  right: 10px;
+  bottom: 140px;
+  right: 20px;
 }
 
-#es-loreal.es-loreal .es-cross__content--2 {
-  max-width: 200px;
-  margin-right: 0;
-  margin-left: auto;
-}
+
 #es-loreal.es-loreal .es-cross__content--2::after {
   content: "";
   width: 1px;
@@ -753,7 +752,7 @@ background: radial-gradient(circle, rgba(252,70,107,1) 0%, rgba(0,0,0,1) 86%);
   display: none;
 }
 /* end of cross sell */
-@media (max-width: 650px){
+@media (max-width: 799px){
   .es-cross{
     display: none;
   }
@@ -780,7 +779,7 @@ background: radial-gradient(circle, rgba(252,70,107,1) 0%, rgba(0,0,0,1) 86%);
   }
  .es-cross__container{
     display: grid !important;
-    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
    
   }
   .es-cross__content{
@@ -790,7 +789,7 @@ background: radial-gradient(circle, rgba(252,70,107,1) 0%, rgba(0,0,0,1) 86%);
     width: auto;
     max-height: 300px;
     padding: 16px;
-    border:1px solid red;
+   
   }
   .es-cross__content--1{
     position: static;
@@ -801,10 +800,6 @@ background: radial-gradient(circle, rgba(252,70,107,1) 0%, rgba(0,0,0,1) 86%);
     position: static;
     top:0;
     left:0%;
-    border:1px solid red;
-    
-   
-    
   }
   .es-cross__content--3{
     position: static;
@@ -961,9 +956,7 @@ background: radial-gradient(circle, rgba(252,70,107,1) 0%, rgba(0,0,0,1) 86%);
     display: flex;
     
   }
-  #es-loreal.es-loreal .es-cross__content--2 {
-    max-width: 164px;
-  }
+ 
   #es-loreal.es-loreal .es-cross__product {
     -webkit-box-flex: 1;
         -ms-flex: 1 50%;
